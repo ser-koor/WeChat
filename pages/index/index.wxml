@@ -2,8 +2,17 @@
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
 
-<view wx:for="{{students}}">{{item.name}}-{{item.id}}</view>
+<view wx:for="{{list}}" wx:key="key">{{item.words}}</view>
+
+<view wx:for="{{students}}" wx:key="key">{{item.name}}-{{item.id}}</view>
 
 <view>当前赞数: {{counter}}</view>
 <button size="mini" bindtap="handleAddClick">+</button>
 <button size="mini" bindtap="handleSubClick">-</button>
+
+<!-- 获取用户信息 弃用 -->
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="handleUserInfo">获取</button>
+
+<!-- 展示用户信息 -->
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>

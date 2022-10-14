@@ -1,19 +1,28 @@
 // app.js
 App({
+  //小程序初始化完成时执行
   onLaunch() {
-    // 展示本地存储能力
-    const logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+  //  console.log('onLaunch');
+  },
+  //小程序显示时执行
+  onShow() {
+    // console.log('onShow');
+    wx.getUserInfo({
+      success: (result) => {
+        // console.log(result);
       }
     })
   },
+  //小程序隐藏式执行
+  onHide() {
+    console.log('onHide');
+  },
+  //小程序产生一些错误时执行
+  onError() {
+    console.log('onError');
+  },
   globalData: {
-    userInfo: null
+    name: 'chendada',
+    age: 18
   }
 })
