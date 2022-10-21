@@ -1,0 +1,4 @@
+<!--pages/text/text.wxml-->
+<text user-select
+      space="nbsp"
+      decode>1234 5</text>

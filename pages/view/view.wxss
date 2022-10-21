@@ -1,0 +1,9 @@
+/* pages/view/view.wxss */
+.new {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+}
+.new1 {
+  background-color: #e58;
+}

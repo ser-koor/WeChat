@@ -1,0 +1,21 @@
+<!--pages/wxml/wxml.wxml-->
+<view class="active">哈哈哈哈哈</view>
+<button size="mini" bindtap="handleColor">切换颜色</button>
+<view class="{{isShow ? 'content' : ''}}">呵呵呵呵呵</view>
+<view>----------</view>
+
+<view hidden="{{!isShow}}" class="hahaha">hehehhe1</view>
+<view wx:if="{{!isShow}}" class="hahaha">hahahha2</view>
+<view>----------</view>
+
+<block wx:for="{{movie}}" wx:for-item="inneritem" wx:key="inneritem">
+  <block wx:for="{{inneritem}}" wx:key="item">
+    <view>{{item}}</view>
+  </block>
+</block>
+<view>----------</view>
+
+<import src="/wxml/template"/>
+<template is="common" data="{{btn: '按钮1', content: '我是内容1'}}"></template>
+<template is="common" data="{{btn: '按钮2', content: '我是内容2'}}"></template>
+<template is="common" data="{{btn: '按钮3', content: '我是内容3'}}"></template>

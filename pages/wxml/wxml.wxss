@@ -1,0 +1,11 @@
+/* pages/wxml/wxml.wxss */
+.active {
+  color: red;
+}
+.content {
+  background-color: #a2a;
+}
+.hahaha {
+  height: 100rpx;
+  background-color: aqua;
+}

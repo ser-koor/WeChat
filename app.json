@@ -1,5 +1,9 @@
 {
   "pages": [
+    "pages/view/view",
+    "pages/wxml/wxml",
+    "pages/scroll/scroll",
+    "pages/text/text",
     "pages/index/index",
     "pages/logs/logs"
   ],

@@ -1,0 +1,10 @@
+/* pages/scroll/scroll.wxss */
+.scroll {
+  height: 200px;
+  white-space: nowrap;
+  background-color: aqua;
+}
+.scroll2 view{
+  display: inline-block;
+  width: 50px;
+}

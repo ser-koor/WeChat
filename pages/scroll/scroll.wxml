@@ -1,0 +1,15 @@
+<!--pages/scroll/scroll.wxml-->
+<scroll-view class="scroll"
+             scroll-y
+             scroll-top
+             refresher-enabled
+             refresher-background="#eee">
+  <view wx:for="{{20}}" wx:key="item">{{item}}</view>
+</scroll-view>
+<view>--------</view>
+<scroll-view class="scroll scroll2"
+             scroll-x
+             scroll-top>
+  <view wx:for="{{20}}" wx:key="item">{{item}}</view>
+</scroll-view>
+

@@ -1,0 +1,31 @@
+<!--pages/view/view.wxml-->
+<view class="new"
+      hover-class='new1'
+      hover-start-time='1000'
+      hover-stay-time='2000'>
+    111</view>
+
+<wxs src="../../wxs/info.wxs" module="info"/>
+<!-- <wxs module="info">
+  var message = 'message';
+  var name = 666;
+  function sum(a, b) {
+    return a + b;
+  }
+  module.exports = {
+    message: message,
+    name: name,
+    sum: sum
+  }
+</wxs> -->
+
+<view>{{info.message}}</view>
+<view>{{info.name}}</view>
+<view>{{info.sum(1,9)}}</view>
+<view>{{time}}</view>
+<view>{{message}}</view>
+<view>-------------</view>
+
+<wxs src="../../wxs/priceFormat.wxs" module="format"/>
+<view>{{format.priceForemat(price, 2)}}</view>
+<view>{{format.getTime(ftime)}}</view>
