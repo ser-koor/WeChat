@@ -1,0 +1,12 @@
+/* components/my-cpn/my-cpn.wxss */
+.title {
+  background-color: green;
+  text-align: center;
+  font-size: 35rpx;
+}
+.cpn1 {
+  background-color: pink;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}

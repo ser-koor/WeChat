@@ -5,9 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    count: 0
   },
-
+  handleIndexAdd(event) {
+    // console.log(event.detail);
+    this.setData({
+      count: this.data.count+1
+    })
+  },
+  handleTabClick(event) {
+    console.log(event);
+  },
+  //修改组件内的值
+  handleCpn() {
+    //获取组件对象
+    var my_sel = this.selectComponent('.sel-class')
+    // console.log(my_sel);
+    //通过方法对数据进行修改
+    my_sel.incrementCounter(10)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

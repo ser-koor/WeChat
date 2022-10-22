@@ -1,0 +1,3 @@
+<!--components/my-style/my-style.wxml-->
+<view class="titleclass">{{title}}</view>
+<button size="mini" type="primary">点我</button>

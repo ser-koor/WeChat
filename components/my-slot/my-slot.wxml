@@ -1,0 +1,6 @@
+<!--components/my-slot/my-slot.wxml-->
+<view>我是slot的头部</view>
+  <view><slot name="first"/></view>
+  <view><slot name="center"/></view>
+  <view><slot name="end"/></view>
+<view>我是slot的尾部</view>
