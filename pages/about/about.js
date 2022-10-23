@@ -1,18 +1,18 @@
-// pages/index/index.js
+// pages/about/about.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    current: 0
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    console.log(options);
   },
 
   /**
@@ -40,7 +40,12 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-
+    const pages = getCurrentPages()
+    console.log(pages[pages.length - 2]);
+    const home = pages[pages.length - 2]
+    home.setData({
+      current: home.data.current+1
+    })
   },
 
   /**
